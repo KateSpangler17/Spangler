@@ -1,0 +1,160 @@
+/* These are comments*/ 
+
+/* Main section*/ 
+#red {color: red;} /*by the ID*/ /* highest priority */
+.yellow{ color:yellow;}/* by the Class*/ /* middle priority */
+p {color:green;} /* by the tag name */ /* low priority */
+
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+/* css reset ends */
+
+
+body {background-color: #f2f2f2;}
+
+#page_whrapper { 
+    border:1px solid black;
+    width: 80%;
+    margin: 20px auto;
+}
+
+
+header{
+    border:1px solid;
+    display:flex;
+justify-content: space-between;
+align-items:center;
+
+}
+
+.menu ul li {
+    display:inline;
+    padding:10px 20px;
+
+}
+
+.logo-of-my-company {
+    padding: 20px;
+}
+
+.button {
+    padding: 20px;
+    border-radius: 400px;
+}
+
+.image {
+    display: block;
+    border:1px black;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 2%;
+}
+#about_me {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+gap:30px;
+
+}
+#my_works {
+ 
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  
+  
+
+}
+
+.container1 { background-color:#d1cdcddf;
+  font-family: "Georgia";
+  width:300px;
+  height: 300px;
+  margin: 40px;
+  border-radius: 10%;
+  
+}
+
+.container2 {
+ 
+  background-color:#d1cdcddf;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width:300px;
+  height: 300px;
+  margin: 40px;
+  border-radius: 10%;
+ 
+}
+
+.container3 {background-color:#d1cdcddf;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width:300px;
+  height: 300px;
+  margin: 40px;
+  border-radius: 10%;
+  
+}
+.lable {
+  justify-content:center;
+  align-items:center;
+}
+
+
+@media (max-width: 1060px){
+  #page-wrapper {
+    padding: 0 20px;
+
+  }
+}
